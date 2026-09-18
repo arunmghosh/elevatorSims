@@ -72,14 +72,14 @@ The full 365-day experiment ($N = 365$ independent 24-hour trials, 671,600 total
 | Metric | Traditional Algorithm | Modern Algorithm | Difference |
 | :--- | :---: | :---: | :---: |
 | **Sample Size ($N$)** | 365 trials | 365 trials | — |
-| **Mean 90th %ile Wait** | **29.78 s** | **28.89 s** | **-0.90 s (-3.0%)** |
-| **Standard Deviation ($\sigma$)** | 0.4730 s | 0.3933 s | -16.8% variance |
-| **Standard Error ($\text{SE}$)** | 0.0248 s | 0.0206 s | — |
-| **Margin of Error ($90\%$ CI)** | $\pm 0.0408\text{ s}$ | $\pm 0.0340\text{ s}$ | — |
-| **$90\%$ Confidence Interval** | **[29.7419 s, 29.8236 s]** | **[28.8537 s, 28.9216 s]** | **NO OVERLAP** |
+| **Mean 90th %ile Wait** | **29.99 s** | **29.09 s** | **-0.91 s (-3.0%)** |
+| **Standard Deviation ($\sigma$)** | 0.4343 s | 0.3905 s | -10.1% variance |
+| **Standard Error ($\text{SE}$)** | 0.0227 s | 0.0204 s | — |
+| **Margin of Error ($90\%$ CI)** | $\pm 0.0375\text{ s}$ | $\pm 0.0337\text{ s}$ | — |
+| **$90\%$ Confidence Interval** | **[29.9559 s, 30.0309 s]** | **[29.0534 s, 29.1208 s]** | **NO OVERLAP** |
 
-- **Confidence Interval Overlap**: **None** (Separation of **$0.8203\text{ seconds}$**).
-- **Statistical Significance**: The upper bound of the Modern algorithm ($28.9216\text{ s}$) is strictly lower than the lower bound of the Traditional algorithm ($29.7419\text{ s}$), demonstrating a statistically significant reduction in waiting times.
+- **Confidence Interval Overlap**: **None** (Separation of **$0.8351\text{ seconds}$**).
+- **Statistical Significance**: The upper bound of the Modern algorithm ($29.1208\text{ s}$) is strictly lower than the lower bound of the Traditional algorithm ($29.9559\text{ s}$), demonstrating a statistically significant reduction in waiting times.
 
 ---
 
@@ -88,13 +88,13 @@ The full 365-day experiment ($N = 365$ independent 24-hour trials, 671,600 total
 | Metric | Traditional Algorithm | Modern Algorithm | Difference |
 | :--- | :---: | :---: | :---: |
 | **Sample Size ($N$)** | 365 trials | 365 trials | — |
-| **Mean Slowest Speed** | **0.7191 floors/s** | **0.7585 floors/s** | **+0.0393 floors/s (+5.5%)** |
-| **Standard Deviation ($\sigma$)** | 0.0084 floors/s | 0.0078 floors/s | -6.5% variance |
-| **Standard Error ($\text{SE}$)** | 0.00044 floors/s | 0.00041 floors/s | — |
-| **Margin of Error ($90\%$ CI)** | $\pm 0.00072\text{ floors/s}$ | $\pm 0.00068\text{ floors/s}$ | — |
-| **$90\%$ Confidence Interval** | **[0.7184 floors/s, 0.7198 floors/s]** | **[0.7578 floors/s, 0.7591 floors/s]** | **NO OVERLAP** |
+| **Mean Slowest Speed** | **0.7154 floors/s** | **0.7580 floors/s** | **+0.0426 floors/s (+6.0%)** |
+| **Standard Deviation ($\sigma$)** | 0.0090 floors/s | 0.0073 floors/s | -18.9% variance |
+| **Standard Error ($\text{SE}$)** | 0.00047 floors/s | 0.00038 floors/s | — |
+| **Margin of Error ($90\%$ CI)** | $\pm 0.00078\text{ floors/s}$ | $\pm 0.00063\text{ floors/s}$ | — |
+| **$90\%$ Confidence Interval** | **[0.7146 floors/s, 0.7161 floors/s]** | **[0.7574 floors/s, 0.7586 floors/s]** | **NO OVERLAP** |
 
-- **Confidence Interval Overlap**: **None** (Separation of **$0.0379\text{ floors/s}$**).
+- **Confidence Interval Overlap**: **None** (Separation of **$0.0412\text{ floors/s}$**).
 - **Statistical Significance**: The slowest elevator in the Modern algorithm operates at a statistically significantly higher speed because advance destination notice groups passengers heading to the same floors, reducing intermediate stopping and door delays.
 
 ---
@@ -141,11 +141,11 @@ Average passenger pickups per elevator across all 365 trials:
 While the mathematical simulation definitively demonstrates statistical significance under formal hypothesis testing criteria, a practical engineering assessment reveals that the real-world impact on resident experience is negligible:
 
 1. **Waiting Time Difference (< 1 Second)**:
-   - *Statistical Reality*: The 90% confidence intervals show zero overlap (separated by $0.8203\text{s}$, $p < 0.05$), formally validating that Modern Destination Dispatch outperforms Traditional Dispatch.
-   - *Pragmatic Reality*: The actual absolute difference in the 90th percentile wait time is **only 0.89 seconds** (**28.89s vs. 29.78s**). To a human standing in an elevator lobby, a fraction of a second is completely imperceptible and has zero practical bearing on comfort, punctuality, or resident satisfaction.
+   - *Statistical Reality*: The 90% confidence intervals show zero overlap (separated by $0.8351\text{s}$, $p < 0.05$), formally validating that Modern Destination Dispatch outperforms Traditional Dispatch.
+   - *Pragmatic Reality*: The actual absolute difference in the 90th percentile wait time is **only 0.91 seconds** (**29.09s vs. 29.99s**). To a human standing in an elevator lobby, a fraction of a second is completely imperceptible and has zero practical bearing on comfort, punctuality, or resident satisfaction.
 2. **Speed Difference (< 0.05 Floors/Second)**:
-   - *Statistical Reality*: The slowest elevator speed shows zero CI overlap (separated by $0.0379\text{ floors/s}$, $p < 0.05$).
-   - *Pragmatic Reality*: The difference is **only 0.039 floors/second** (**0.7585 vs. 0.7191 floors/s**). For a typical 10-floor journey, this amounts to a transit time difference of less than 0.7 seconds. Human vestibular and visual senses cannot perceive a velocity change of 0.04 floors/s in a smooth vertical cab.
+   - *Statistical Reality*: The slowest elevator speed shows zero CI overlap (separated by $0.0412\text{ floors/s}$, $p < 0.05$).
+   - *Pragmatic Reality*: The difference is **only 0.043 floors/second** (**0.7580 vs. 0.7154 floors/s**). For a typical 10-floor journey, this amounts to a transit time difference of less than 0.8 seconds. Human vestibular and visual senses cannot perceive a velocity change of 0.04 floors/s in a smooth vertical cab.
 3. **Capital Expenditure & Complexity**:
    - Modern Destination Dispatch requires dedicated touch kiosks on all 34 floors, expensive proprietary group controllers, and tenant habit re-education (passengers cannot change their mind or select floors inside the car).
    - In massive commercial office towers with thousands of workers arriving during a compressed 15-minute morning peak, destination dispatch provides substantial crowd control. However, in a **residential apartment tower** where resident routines naturally disperse across several morning and evening hours, the massive financial and operational costs yield virtually zero tangible benefit to residents.

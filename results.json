@@ -4,54 +4,54 @@
       "metric_name": "Traditional 90th Percentile Wait Time (s)",
       "confidence_level": 0.9,
       "sample_size": 365,
-      "mean": 29.782739726027398,
-      "std_dev": 0.4730113381594501,
-      "std_error": 0.024758545004906544,
-      "margin_of_error": 0.04082809213800377,
-      "lower_bound": 29.741911633889394,
-      "upper_bound": 29.8235678181654
+      "mean": 29.993424657534252,
+      "std_dev": 0.43426146469610327,
+      "std_error": 0.0227302839281006,
+      "margin_of_error": 0.03748338710354602,
+      "lower_bound": 29.955941270430706,
+      "upper_bound": 30.030908044637798
     },
     "modern": {
       "metric_name": "Modern 90th Percentile Wait Time (s)",
       "confidence_level": 0.9,
       "sample_size": 365,
-      "mean": 28.887671232876716,
-      "std_dev": 0.3933322021975341,
-      "std_error": 0.02058794841552804,
-      "margin_of_error": 0.03395056755859715,
-      "lower_bound": 28.853720665318118,
-      "upper_bound": 28.921621800435314
+      "mean": 29.087123287671236,
+      "std_dev": 0.3905106527653561,
+      "std_error": 0.02044026176837076,
+      "margin_of_error": 0.03370702481258783,
+      "lower_bound": 29.053416262858647,
+      "upper_bound": 29.120830312483825
     },
     "overlap": false,
     "overlap_amount": 0.0,
-    "conclusion": "The 90% confidence intervals DO NOT OVERLAP (separation of 0.8203). Conclusion: The modern advance destination notice system provides a statistically significant benefit."
+    "conclusion": "The 90% confidence intervals DO NOT OVERLAP (separation of 0.8351). Conclusion: The modern advance destination notice system provides a statistically significant benefit."
   },
   "slowest_speed": {
     "traditional": {
       "metric_name": "Traditional Slowest Elevator Speed (floors/s)",
       "confidence_level": 0.9,
       "sample_size": 365,
-      "mean": 0.7191214628282943,
-      "std_dev": 0.008367180535507343,
-      "std_error": 0.00043795824569157387,
-      "margin_of_error": 0.000722215283820212,
-      "lower_bound": 0.718399247544474,
-      "upper_bound": 0.7198436781121145
+      "mean": 0.7153610621502617,
+      "std_dev": 0.00900704942034735,
+      "std_error": 0.0004714505138562121,
+      "margin_of_error": 0.0007774457268961515,
+      "lower_bound": 0.7145836164233655,
+      "upper_bound": 0.7161385078771579
     },
     "modern": {
       "metric_name": "Modern Slowest Elevator Speed (floors/s)",
       "confidence_level": 0.9,
       "sample_size": 365,
-      "mean": 0.7584562047099607,
-      "std_dev": 0.007821644506633862,
-      "std_error": 0.00040940358487684934,
-      "margin_of_error": 0.0006751272048364923,
-      "lower_bound": 0.7577810775051241,
-      "upper_bound": 0.7591313319147972
+      "mean": 0.757978536335835,
+      "std_dev": 0.007279342434189625,
+      "std_error": 0.00038101819707809284,
+      "margin_of_error": 0.0006283182656120375,
+      "lower_bound": 0.757350218070223,
+      "upper_bound": 0.7586068546014471
     },
     "overlap": false,
     "overlap_amount": 0.0,
-    "conclusion": "The 90% confidence intervals DO NOT OVERLAP (separation of 0.0379). Conclusion: The modern advance destination notice system provides a statistically significant benefit."
+    "conclusion": "The 90% confidence intervals DO NOT OVERLAP (separation of 0.0412). Conclusion: The modern advance destination notice system provides a statistically significant benefit."
   },
   "night_return_rate": {
     "traditional": {

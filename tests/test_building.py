@@ -27,16 +27,20 @@ class TestBuildingAndResidents(unittest.TestCase):
         self.assertEqual(ELEVATOR_CAPACITY, 10)
 
     def test_assigned_parking_formula(self):
-        """Spec updated formula: floor([apartment_floor - 3] / 3) clamped to [2, 9]."""
-        # Floor 11: floor((11 - 3) / 3) = floor(8 / 3) = 2
+        """Spec formula: floor([apartment_floor - 4] / 3) naturally mapping to [2, 9]."""
+        # Floor 11: floor((11 - 4) / 3) = floor(7 / 3) = 2
         self.assertEqual(get_assigned_parking_floor(11), 2)
-        # Floor 12: floor((12 - 3) / 3) = floor(9 / 3) = 3
-        self.assertEqual(get_assigned_parking_floor(12), 3)
-        # Floor 15: floor((15 - 3) / 3) = floor(12 / 3) = 4
-        self.assertEqual(get_assigned_parking_floor(15), 4)
-        # Floor 30: floor((30 - 3) / 3) = floor(27 / 3) = 9
-        self.assertEqual(get_assigned_parking_floor(30), 9)
-        # Floor 33: floor((33 - 3) / 3) = floor(30 / 3) = 10, clamped to max parking floor 9
+        # Floor 12: floor((12 - 4) / 3) = floor(8 / 3) = 2
+        self.assertEqual(get_assigned_parking_floor(12), 2)
+        # Floor 13: floor((13 - 4) / 3) = floor(9 / 3) = 3
+        self.assertEqual(get_assigned_parking_floor(13), 3)
+        # Floor 15: floor((15 - 4) / 3) = floor(11 / 3) = 3
+        self.assertEqual(get_assigned_parking_floor(15), 3)
+        # Floor 16: floor((16 - 4) / 3) = floor(12 / 3) = 4
+        self.assertEqual(get_assigned_parking_floor(16), 4)
+        # Floor 30: floor((30 - 4) / 3) = floor(26 / 3) = 8
+        self.assertEqual(get_assigned_parking_floor(30), 8)
+        # Floor 33: floor((33 - 4) / 3) = floor(29 / 3) = 9
         self.assertEqual(get_assigned_parking_floor(33), 9)
 
         # Ensure all residential floors map strictly within parking levels [2, 9]

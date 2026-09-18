@@ -7,7 +7,7 @@ Specification Details:
     - Floor 10: Study floor
     - Floors 11-33: Residential (23 floors, 10 4-person apartments = 40 people/floor, 920 residents)
     - Floor 34: Sky lounge
-- Assigned parking floor: floor([apartment_floor - 3] / 3) clamped to parking range [2, 9]
+- Assigned parking floor: floor([apartment_floor - 4] / 3) clamped to parking range [2, 9]
 - 8 elevators, capacity 10, speed 1 floor/sec
 - Boarding and exiting delay: 3 seconds per person
 - Time step: 1 second
@@ -77,9 +77,9 @@ PROB_SKY_LOUNGE = 0.10
 
 
 def get_assigned_parking_floor(apartment_floor: int) -> int:
-    """Calculates assigned parking floor: floor([apartment_floor - 3] / 3).
+    """Calculates assigned parking floor: floor([apartment_floor - 4] / 3).
     
     Guarantees result falls within designated parking floors [2, 9].
     """
-    raw_floor = math.floor((apartment_floor - 3) / 3)
+    raw_floor = math.floor((apartment_floor - 4) / 3)
     return max(MIN_PARKING_FLOOR, min(MAX_PARKING_FLOOR, raw_floor))
