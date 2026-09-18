@@ -1,0 +1,82 @@
+{
+  "wait_time": {
+    "traditional": {
+      "metric_name": "Traditional 90th Percentile Wait Time (s)",
+      "confidence_level": 0.9,
+      "sample_size": 365,
+      "mean": 29.782739726027398,
+      "std_dev": 0.4730113381594501,
+      "std_error": 0.024758545004906544,
+      "margin_of_error": 0.04082809213800377,
+      "lower_bound": 29.741911633889394,
+      "upper_bound": 29.8235678181654
+    },
+    "modern": {
+      "metric_name": "Modern 90th Percentile Wait Time (s)",
+      "confidence_level": 0.9,
+      "sample_size": 365,
+      "mean": 28.887671232876716,
+      "std_dev": 0.3933322021975341,
+      "std_error": 0.02058794841552804,
+      "margin_of_error": 0.03395056755859715,
+      "lower_bound": 28.853720665318118,
+      "upper_bound": 28.921621800435314
+    },
+    "overlap": false,
+    "overlap_amount": 0.0,
+    "conclusion": "The 90% confidence intervals DO NOT OVERLAP (separation of 0.8203). Conclusion: The modern advance destination notice system provides a statistically significant benefit."
+  },
+  "slowest_speed": {
+    "traditional": {
+      "metric_name": "Traditional Slowest Elevator Speed (floors/s)",
+      "confidence_level": 0.9,
+      "sample_size": 365,
+      "mean": 0.7191214628282943,
+      "std_dev": 0.008367180535507343,
+      "std_error": 0.00043795824569157387,
+      "margin_of_error": 0.000722215283820212,
+      "lower_bound": 0.718399247544474,
+      "upper_bound": 0.7198436781121145
+    },
+    "modern": {
+      "metric_name": "Modern Slowest Elevator Speed (floors/s)",
+      "confidence_level": 0.9,
+      "sample_size": 365,
+      "mean": 0.7584562047099607,
+      "std_dev": 0.007821644506633862,
+      "std_error": 0.00040940358487684934,
+      "margin_of_error": 0.0006751272048364923,
+      "lower_bound": 0.7577810775051241,
+      "upper_bound": 0.7591313319147972
+    },
+    "overlap": false,
+    "overlap_amount": 0.0,
+    "conclusion": "The 90% confidence intervals DO NOT OVERLAP (separation of 0.0379). Conclusion: The modern advance destination notice system provides a statistically significant benefit."
+  },
+  "night_return_rate": {
+    "traditional": {
+      "metric_name": "Traditional Night Return Rate (%)",
+      "confidence_level": 0.9,
+      "sample_size": 365,
+      "mean": 100.0,
+      "std_dev": 0.0,
+      "std_error": 0.0,
+      "margin_of_error": 0.0,
+      "lower_bound": 100.0,
+      "upper_bound": 100.0
+    },
+    "modern": {
+      "metric_name": "Modern Night Return Rate (%)",
+      "confidence_level": 0.9,
+      "sample_size": 365,
+      "mean": 100.0,
+      "std_dev": 0.0,
+      "std_error": 0.0,
+      "margin_of_error": 0.0,
+      "lower_bound": 100.0,
+      "upper_bound": 100.0
+    },
+    "traditional_mean_count": 920.0,
+    "modern_mean_count": 920.0
+  }
+}
