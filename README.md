@@ -26,7 +26,7 @@ This project simulates 365 days (trials) of elevator operations for both systems
   - **Floors 11–33**: Residential (23 floors, 10 4-person apartments = 40 residents/floor, **920 total residents**)
   - **Floor 34**: Sky Lounge
 - **Assigned Parking**:
-  $$\text{Parking Floor} = floor((Apartment_floor - 3)/3)
+  $$\text{Parking Floor} = floor((Apartment floor - 3)/3)$$
 - **Elevators**:
   - **Count**: 8 elevators, all spanning Floor 1 to Floor 34
   - **Capacity**: 10 passengers max
