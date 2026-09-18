@@ -142,13 +142,13 @@ While the mathematical simulation definitively demonstrates statistical signific
 
 1. **Waiting Time Difference (< 1 Second)**:
    - *Statistical Reality*: The 90% confidence intervals show zero overlap (separated by $0.8351\text{s}$, $p < 0.05$), formally validating that Modern Destination Dispatch outperforms Traditional Dispatch.
-   - *Pragmatic Reality*: The actual absolute difference in the 90th percentile wait time is **only 0.91 seconds** (**29.09s vs. 29.99s**). To a human standing in an elevator lobby, a fraction of a second is completely imperceptible and has zero practical bearing on comfort, punctuality, or resident satisfaction.
+   - *Pragmatic Reality*: The actual absolute difference in the 90th percentile wait time is **only 0.91 seconds** (**29.09s vs. 29.99s**). To a resident standing in an elevator lobby, a fraction of a second is completely imperceptible and has zero practical bearing on comfort, punctuality, or satisfaction.
 2. **Speed Difference (< 0.05 Floors/Second)**:
    - *Statistical Reality*: The slowest elevator speed shows zero CI overlap (separated by $0.0412\text{ floors/s}$, $p < 0.05$).
-   - *Pragmatic Reality*: The difference is **only 0.043 floors/second** (**0.7580 vs. 0.7154 floors/s**). For a typical 10-floor journey, this amounts to a transit time difference of less than 0.8 seconds. Human vestibular and visual senses cannot perceive a velocity change of 0.04 floors/s in a smooth vertical cab.
+   - *Pragmatic Reality*: The difference is **only 0.043 floors/second** (**0.7580 vs. 0.7154 floors/s**). For a typical 10-floor journey, this amounts to a transit time difference of less than 0.8 seconds. We probably cannot perceive a velocity change of 0.04 floors/s in a smooth vertical cab.
 3. **Capital Expenditure & Complexity**:
-   - Modern Destination Dispatch requires dedicated touch kiosks on all 34 floors, expensive proprietary group controllers, and tenant habit re-education (passengers cannot change their mind or select floors inside the car).
-   - In massive commercial office towers with thousands of workers arriving during a compressed 15-minute morning peak, destination dispatch provides substantial crowd control. However, in a **residential apartment tower** where resident routines naturally disperse across several morning and evening hours, the massive financial and operational costs yield virtually zero tangible benefit to residents.
+   - Modern Destination Dispatch requires dedicated touch kiosks on all 34 floors, proprietary group controllers, and a change of habits (passengers cannot change their mind or select floors inside the car).
+   - In massive commercial office towers with thousands of workers arriving during a compressed 15-minute morning peak, destination dispatch provides substantial crowd control. However, in a **residential apartment tower** where resident routines naturally disperse across several morning and evening hours, the financial and operational costs yield virtually zero tangible benefit to residents.
 
 ---
 
